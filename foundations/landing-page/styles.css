@@ -16,33 +16,58 @@ body {
 
 .hero-wrapper {
     display: flex;
-    flex-flow: column wrap;
     font-size: 18px;
     color: #e5e7eb;
     gap: 42px;
-    padding: 24px 42px;
+    padding: 24px 13vw;
+    justify-content: space-between;
 }
+
+.left .header-logo {
+    font-size: 24px;
+    color: #f9faf8;
+    font-weight: bold;
+    margin-bottom: 48px;
+}
+
+.left .text {
+    max-width: 24vw;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 8px;
+}
+
+.left .text .main {
+    font-size: 48px;
+    color: inherit;
+    font-weight: 900;
+}
+
+.left .text .secondary {
+    font-size: 18px;
+    color: inherit;
+}
+
+.right .links {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 48px;
+}
+
+.right img {
+    width: 27vw;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    flex-shrink: 0}
 
 .hero-wrapper, .footer {
     background-color: #1f2937;
 }
 
-.header {
+.right .links {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header .logo {
-    font-size: 24px;
-    font-weight: 900;
-    color: #f9faf8;
-}
-
-.links {
-    display: flex;
-    align-items: center;
-    gap: 16px;
+    justify-content: flex-end;
 }
 
 a {
@@ -50,34 +75,20 @@ a {
     color: #e5e7eb;
 }
 
-.hero {
-    display: flex;
-}
-
-.hero .text {
-    max-width: 400px;
-}
-
-.hero .text .main {
-    font-size: 48px;
-    color: #f9faf8;
-    font-weight: 900;
-}
-
 .signup {
     background-color: #3882f6;
     padding: 6px 24px;
     border-radius: 8px;
-    vertical-align: middle;
     color: #e5e7eb;
     font-weight: bold;
+    align-self: flex-start;
 }
 
 .info {
     display: flex;
     flex-flow: column wrap;
     align-items: center;
-    gap: 24px;
+    gap: 48px;
     padding-top: 24px;
     padding-bottom: 48px;
 }
@@ -155,6 +166,7 @@ a {
     padding: 32px 0;
     display: flex;
     justify-content: space-around;
+    border-radius: 4px;
 }
 
 .call-to-action .text {
