@@ -60,7 +60,8 @@ function Game() {
 
 function Main() {
 	alert(
-		"Welcome to Rock Paper Scissors. You will play against the computer. Whoever reaches five first wins."
+		"Welcome to Rock Paper Scissors. You will play against the computer." +
+		" Whoever reaches five first wins."
 	);
 
 	while (computerScore < 5 && playerScore < 5) Game();
