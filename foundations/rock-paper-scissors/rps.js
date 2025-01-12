@@ -38,10 +38,11 @@ function Game() {
 		LOSE_MSG = "You lose!",
 		TIE_MSG = "Tie!";
 
-    let choiceMsg = () => (`Your choice: ${playerChoice}\nComputer choice: ${computerChoice}`);
-    let curMsg = () =>
+	let choiceMsg = () =>
+		`Your choice: ${playerChoice}\nComputer choice: ${computerChoice}`;
+	let curMsg = () =>
 		`Current score: Your score: ${playerScore}, computer score: ${computerScore}.`;
-    let resMsg;
+	let resMsg;
 
 	if (playerChoice === computerChoice) resMsg = TIE_MSG;
 	else {
@@ -54,7 +55,7 @@ function Game() {
 		}
 	}
 
-    alert(choiceMsg() + "\n" + resMsg + "\n" + curMsg());
+	alert(choiceMsg() + "\n" + resMsg + "\n" + curMsg());
 }
 
 function Main() {
